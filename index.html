@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0"> 
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-76438364-26"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() {dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'UA-76438364-26');
+  </script>
+  <style type="text/css">
+  body, .smcx-embed, .smcx-iframe-container, .smcx-iframe-container {
+      height: 100vw !important;
+      width: 100vw !important;
+      max-width: 100vw !important;
+    }
+    html{ margin: 0; height: 100%; overflow: hidden; } 
+    iframe{ position: absolute; left:0; right:0; bottom:0; top:0; border:0; } 
+
+    .iframeWrapper {
+      height: 100%;
+    }
+
+  </style>
+</head>
+
+<body>
+  <div width="100%" height="100%" id='embeds'>
+
+  <script type='text/javascript'>
+    function shuffle(arra1) {
+      var ctr = arra1.length, temp, index;
+
+    // While there are elements in the array
+        while (ctr > 0) {
+    // Pick a random index
+            index = Math.floor(Math.random() * ctr);
+    // Decrease ctr by 1
+            ctr--;
+    // And swap the last element with it
+            temp = arra1[ctr];
+            arra1[ctr] = arra1[index];
+            arra1[index] = temp;
+        }
+        return arra1;
+    }
+    var embeds = [
+    '<iframe id="typeform-full" width="100%" height="100%" frameborder="0" allow="camera; microphone; autoplay; encrypted-media;" src="https://bedlamfilm.typeform.com/to/b4CZLs"></iframe> ',
+    '<iframe id="typeform-full" width="100%" height="100%" frameborder="0" allow="camera; microphone; autoplay; encrypted-media;" src="https://bedlamfilm.typeform.com/to/r0SniT"></iframe>',
+    '<iframe id="typeform-full" width="100%" height="100%" frameborder="0" allow="camera; microphone; autoplay; encrypted-media;" src="https://bedlamfilm.typeform.com/to/F1mLPI"></iframe>',
+    ]
+
+    const shuffledArr = shuffle(embeds);
+    
+    var element = document.createElement( 'div' );
+    element.classList.add("iframeWrapper");
+    element.innerHTML = embeds[0];
+
+    document.getElementById('embeds').appendChild(element);
+  
+  </script>
+  </div>
+</body>
+
+</html>
